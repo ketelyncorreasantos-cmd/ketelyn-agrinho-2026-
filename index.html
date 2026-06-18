@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">Agro<span>Sustentável</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#pilares">Pilares</a></li>
+                    <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                    <li><a href="#interativo">Simulador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>O equilíbrio perfeito entre a alta produtividade do agronegócio e a sabedoria da agricultura familiar em harmonia com o meio ambiente.</p>
+            <a href="#pilares" class="btn-primary">Conheça os Pilares</a>
+        </div>
+    </section>
+
+    <section id="pilares" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">As Duas Forças do Campo</h2>
+            <div class="grid-dois-pilares">
+                
+                <div class="pilar-card">
+                    <img src="https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&q=80&w=600" alt="Tecnologia no Agronegócio">
+                    <div class="pilar-info">
+                        <h3>Agronegócio de Alta Precisão</h3>
+                        <p>Responsável por alimentar grande parte da população global e mover a economia. Hoje, o grande agronegócio utiliza drones, inteligência artificial e análise de dados para otimizar o uso de água, fertilizantes e solo, garantindo a máxima eficiência com o menor impacto possível.</p>
+                    </div>
+                </div>
+
+                <div class="pilar-card">
+                    <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=600" alt="Agricultura Familiar">
+                    <div class="pilar-info">
+                        <h3>Agricultura Familiar e Biodiversidade</h3>
+                        <p>A base da alimentação que chega às mesas locais. A agricultura familiar destaca-se pelo manejo diversificado, preservação de tradições e técnicas agroecológicas. Ela é fundamental para a segurança alimentar e para a manutenção do equilíbrio ecológico regional.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="sustentabilidade" class="bg-light section-padding">
+        <div class="container">
+            <h2 class="section-title">O Caminho do Equilíbrio</h2>
+            <p class="section-subtitle">Como a produção e a preservação caminham juntas através de práticas modernas:</p>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🌱</div>
+                    <h4>Plantio Direto</h4>
+                    <p>Protege o solo contra a erosão, mantém a umidade natural e reduz as emissões de carbono na atmosfera.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💧</div>
+                    <h4>Irigação Inteligente</h4>
+                    <p>Sistemas gotejadores e sensores de solo que evitam o desperdício, usando a quantidade exata de água que a planta precisa.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔄</div>
+                    <h4>Rotação de Culturas</h4>
+                    <p>Alternar espécies plantadas na mesma área para recuperar os nutrientes do solo de forma biológica e natural.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="interativo" class="section-padding">
+        <div class="container container-small">
+            <div class="interactive-box">
+                <h2>Simulador de Prática Sustentável</h2>
+                <p>Escolha uma ação para aplicar na sua fazenda virtual e veja o impacto gerado:</p>
+                
+                <div class="btn-group">
+                    <button class="btn-action" onclick="simularImpacto('tecnologia')">Adicionar Sensores IoT</button>
+                    <button class="btn-action" onclick="simularImpacto('agrofloresta')">Implementar Agrofloresta</button>
+                    <button class="btn-action" onclick="simularImpacto('quimicos')">Uso Indiscriminado de Insumos</button>
+                </div>
+
+                <div id="resultado-simulacao" class="resultado-box hidden">
+                    <h4 id="resultado-titulo"></h4>
+                    <p id="resultado-texto"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 AgroSustentável. Todos os direitos reservados.</p>
+            <p>Conectando a produtividade do amanhã com o respeito à terra hoje.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
